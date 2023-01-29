@@ -124,7 +124,7 @@ def predictYield():
 @app.route("/detect-disease",methods=["POST"])
 def detectDisease():
     img = request.files['image']
-    link = "del."+imghdr.what(img)
+    link = "temp."+imghdr.what(img)
     img.save(link)
     # print(img)
     # disease_model = tf.keras.models.load_model("pathology-detector-optim")
