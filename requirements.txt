@@ -6,3 +6,4 @@ pickleshare==0.7.5
 jsonpickle==3.0.1
 openai==0.26.3
 geopy==2.3.0
+tensorflow==1.14.0
