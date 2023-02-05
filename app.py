@@ -25,7 +25,7 @@ CORS(app)
 # fertilizer_model = pickle.load(open('.\\models\\fertilizer.pickle', 'rb'))
 # yield_model = pickle.load(open('.\\models\\yield.pickle', 'rb'))
 
-unix
+# unix
 crop_model = pickle.load(open('./models/crop.pickle', 'rb'))
 fertilizer_model = pickle.load(open('./models/fertilizer.pickle', 'rb'))
 yield_model = pickle.load(open('./models/yield.pickle', 'rb'))
