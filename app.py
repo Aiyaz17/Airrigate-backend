@@ -13,17 +13,22 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-with open('.\\models\\crop.pickle', 'rb') as f:
-    crop_model = pickle.load(f)
-with open('.\\models\\fertilizer.pickle', 'rb') as f:
-    fertilizer_model = pickle.load(f)
-with open('.\\models\\yield.pickle', 'rb') as f:
-    yield_model = pickle.load(f)
+# with open('.\\models\\crop.pickle', 'rb') as f:
+#     crop_model = pickle.load(f)
+# with open('.\\models\\fertilizer.pickle', 'rb') as f:
+#     fertilizer_model = pickle.load(f)
+# with open('.\\models\\yield.pickle', 'rb') as f:
+#     yield_model = pickle.load(f)
 
+# windows
 # crop_model = pickle.load(open('.\\models\\crop.pickle', 'rb'))
 # fertilizer_model = pickle.load(open('.\\models\\fertilizer.pickle', 'rb'))
 # yield_model = pickle.load(open('.\\models\\yield.pickle', 'rb'))
 
+unix
+crop_model = pickle.load(open('./models/crop.pickle', 'rb'))
+fertilizer_model = pickle.load(open('./models/fertilizer.pickle', 'rb'))
+yield_model = pickle.load(open('./models/yield.pickle', 'rb'))
 @app.route("/")
 def home():
     # return fetchClimateApi("usa")
