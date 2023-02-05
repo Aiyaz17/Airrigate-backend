@@ -8,3 +8,4 @@ openai==0.26.3
 geopy==2.3.0
 tensorflow
 gunicorn==19.7.1
+sklearn
